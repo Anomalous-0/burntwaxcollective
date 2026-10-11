@@ -250,6 +250,10 @@
       padding-top: 72px;
       position: relative;
       overflow: hidden;
+      /* Darken the screenshot so the hero text stays readable. */
+      background:
+        linear-gradient(180deg, rgba(10, 14, 26, 0.65) 0%, rgba(10, 14, 26, 0.78) 75%, var(--bg-deep) 100%),
+        url('images/wakizashi.png') center / cover no-repeat;
     }
 
     .hero::before {
@@ -306,7 +310,7 @@
     }
 
     .hero-desc {
-      color: var(--text-secondary);
+      color: var(--text-primary);
       font-size: 1.2rem;
       max-width: 540px;
       margin-bottom: 40px;
