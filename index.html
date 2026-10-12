@@ -453,8 +453,14 @@
       margin-top: 48px;
     }
 
+    .game-intro {
+      display: grid;
+      grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+      gap: 40px;
+      align-items: start;
+    }
+
     .game-download {
-      margin-top: 32px;
       padding: 28px;
       background: var(--bg-card);
       border: 1px solid var(--border);
@@ -798,6 +804,11 @@
        RESPONSIVE
        ============================================ */
     @media (max-width: 768px) {
+      .game-intro {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+
       :root {
         --section-pad: 80px;
       }
@@ -1146,6 +1157,7 @@
        ======================================== -->
   <section id="game">
     <div class="container">
+      <div class="game-intro">
       <div class="fade-in">
         <p class="section-label">In Development</p>
         <h2 class="section-title">Our Game</h2>
@@ -1164,6 +1176,7 @@
         <p>Windows &middot; ZIP download &middot; 96.6 MB<br>
           Extract the entire ZIP, then open <strong>Burntwax Build.exe</strong> inside the extracted folder.</p>
         <a class="btn btn-primary" href="downloads/Burntwax%20DEMO.zip" download="Burntwax DEMO.zip">Download Demo for Windows &darr;</a>
+      </div>
       </div>
 
       <div class="game-showcase fade-in">
